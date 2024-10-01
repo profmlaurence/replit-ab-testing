@@ -81,13 +81,13 @@ def analyze_results(conversions_a, samples_a, conversions_b, samples_b,
 
 
 st.set_page_config(
-    page_title="AB Testing Tools",
+    page_title="Bioethanol 2G Parameters",
     page_icon="assets/microscope.png",
 )
 
 col1, col2 = st.columns([4, 2])
 with col1:
-  st.title("🧪 AB Testing Tools")
+  st.title("🧪 Bioethanol 2G Parameters")
 with col2:
   measurement_type = "Relative"
 
@@ -101,7 +101,7 @@ with tab1:
   col1, col2 = st.columns([1, 1])
 
   with col1:
-    baseline_conv = st.slider("Baseline conversion rate",
+    baseline_conv = st.slider("Cellulose (%)",
                               0.01,
                               0.50,
                               st.session_state.get('ssc_baseline', 0.10),
@@ -110,7 +110,7 @@ with tab1:
                               format="%0.2f")
 
     mde = st.slider(
-        f"Minimum Detectable Effect **({measurement_type.lower()})**",
+        f"Hemicellulose (%)",
         0.01,
         0.50,
         st.session_state.get('ssc_mde', 0.05),
@@ -119,13 +119,13 @@ with tab1:
         format="%0.2f")
 
   with col2:
-    alpha = st.slider("Significance level (alpha)",
+    alpha = st.slider("Lignin (%)",
                       0.01,
                       0.1,
                       st.session_state.get('ssc_alpha', 0.05),
                       0.01,
                       key="ssc_alpha")
-    power = st.slider("Statistical power",
+    power = st.slider("Temp (Cº)",
                       0.7,
                       0.99,
                       st.session_state.get('ssc_power', 0.8),
@@ -256,5 +256,5 @@ with tab2:
 
 # Footer
 st.markdown(
-    "<div style='text-align: center; color: grey;'>Made with ❤️ by <a href='https://x.com/mattppal'>Matt</a> @ Replit. Source code <a href='https://replit.com/@matt/Streamlit-AB-Testing?v=1'>here</a>.</div>",
+    "<div style='text-align: center; color: grey;'>Laboratório de Pesquisa em Química Ambiental e de Biocombustíveis da Universidade Federal do Tocantins - UFT, Campus de Palmas - CUP.</div>",
     unsafe_allow_html=True)

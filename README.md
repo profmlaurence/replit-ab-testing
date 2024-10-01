@@ -1,6 +1,6 @@
-# 📦 AB Testing Demo
+# 📦 Testing LAPEQ parameters Bioethanol production
 
-This AB testing app allows testing statistical parameters for AB tests. The app is created by [Matt Palmer](https://twitter.com/mattppal) from Replit and this recipe is originally available at https://github.com/streamlit/cookbook/tree/main/recipes/replit
+This testing LAPEQ app allows testing statistical parameters for Bioethanol 2G production. The app is created by [Moisés Laurence](https://twitter.com/moiseslaurence) from fork is originally app created by [Matt Palmer](https://twitter.com/mattppal)
 
 ## Demo App
 
